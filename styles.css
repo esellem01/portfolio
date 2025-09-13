@@ -482,6 +482,9 @@ section{scroll-margin-top: calc(var(--header-h) + 16px);}
   margin: 0;                        /* no extra space */
 }
 
+.brand-wall picture { display: block; }
+
+
 /* Optional micro-tweaks for outliers */
 .brand-wall .logo--wide { height: clamp(30px, 4.2vw, 54px); }
 .brand-wall .logo--tall { height: clamp(32px, 4.6vw, 58px); }
