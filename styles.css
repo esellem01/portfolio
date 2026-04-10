@@ -40,11 +40,16 @@ section{scroll-margin-top: calc(var(--header-h) + 16px);}
 .section-tight{padding:28px 0}
 .section h2 { margin:0 0 8px; /* font-size:28px; */ }
 .section-title{
-  text-align:center;
   font-size:40px;
   letter-spacing:.06em;
-  margin:0 0 28px;
-  font-weight:800;     /* single source of truth */
+  font-weight:800;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
 }
 .hint,.sub{color:var(--sub)}
 
