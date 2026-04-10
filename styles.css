@@ -467,24 +467,19 @@ section{scroll-margin-top: calc(var(--header-h) + 16px);}
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  /* row-gap  |  column-gap */
   gap: clamp(8px, 1.2vw, 14px) clamp(12px, 2vw, 18px);
 }
 
 /* Make sizes feel uniform without boxes */
-.brand-wall .logo{
+.brand-wall .logo,
+.brand-wall picture .logo {
   display: block;
-  height: clamp(34px, 4.8vw, 60px); /* one consistent visual height */
-  width: auto;                      /* keep aspect ratio */
-  max-width: 100%;
-  object-fit: contain;              /* just in case */
-  margin: 0;                        /* no extra space */
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-wall picture { display: block; }
 
-
-/* Optional micro-tweaks for outliers */
-.brand-wall .logo--wide { height: clamp(30px, 4.2vw, 54px); }
-.brand-wall .logo--tall { height: clamp(32px, 4.6vw, 58px); }
+/* Individual logo size tweaks */
+.brand-wall .logo[alt="Goli"] { height: 60px; }
