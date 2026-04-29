@@ -199,6 +199,67 @@ section{scroll-margin-top: calc(var(--header-h) + 16px);}
 .logo.wide{ --h:56px; }           /* slightly shorter for long wordmarks */
 .logo.h44{ --h:44px; } .logo.h52{ --h:52px; } .logo.h64{ --h:64px; } .logo.h72{ --h:72px; } .logo.h80{ --h:80px; }
 
+/* ===== TikTok Shop section ===== */
+.tts-subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  margin: -16px 0 28px;
+  color: var(--sub);
+}
+.tts-stats-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin-bottom: 28px;
+}
+.tts-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.tts-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #888;
+}
+.tts-stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: .02em;
+}
+.tts-grid-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--sub);
+  margin: 0 0 14px;
+}
+.tts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.tts-grid img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .tts-stats-bar { padding: 18px 16px; gap: 8px; flex-wrap: wrap; }
+  .tts-stat-value { font-size: 22px; }
+  .tts-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== Responsive ===== */
 @media (min-width:768px){
   .mobile-cta{display:none}
